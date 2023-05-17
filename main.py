@@ -22,3 +22,6 @@ print(baraja_francesa_barajada)
 b = barajas.crear_baraja("A234567SCR", "oceb")
 print(b)
 barajas.barajar_for(b)
+
+mi_baraja = barajas.Baraja("A234567SCR", "BCEO")
+print(mi_baraja.naipes)
