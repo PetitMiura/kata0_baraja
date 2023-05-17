@@ -13,10 +13,10 @@ def crear_baraja(n, p):
 
     return baraja
 
-def barajar_for(baraja):
-    for i in range(len(baraja)):
-        j = random.randrange(0, len(baraja)-1)
-        baraja[i], baraja[j] = baraja[j], baraja[i] 
-    
-    return baraja
+def barajar(baraja):
+    nueva_baraja = []
+    if baraja:
+        nueva_baraja = random.sample(baraja, len(baraja))
+
+    return nueva_baraja
 
